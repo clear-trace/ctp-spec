@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>Aegis ClearTrace Certified ACC</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='description' content='Aegis ClearTrace Certified ACC is a transparency certification program for algorithmic and AI trading systems, based on ClearTrace Protocol CTP.'>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+<header class='site-header'>
+  <div class='container'>
+    <div class='logo'>
+      <a href='/index.html'>Aegis ClearTrace</a>
+    </div>
+    <nav class='main-nav'>
+      <a href='/index.html'>Home</a>
+      <a href='/acsc.html'>ACSC</a>
+      <a href='/acc.html' aria-current='page'>ACC Certification</a>
+      <a href='https://spec.clear-trace.org' target='_blank' rel='noopener'>CTP Spec</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class='hero hero-acc'>
+  <div class='container'>
+    <h1>Aegis ClearTrace Certified (ACC)</h1>
+    <p class='hero-tagline'>
+      Global transparency certification for algorithmic & AI trading systems.
+    </p>
+    <p class='hero-sub'>
+      ACC verifies complete and tamper-evident audit trails generated under the ClearTrace Protocol (CTP), ensuring trust, fairness, and regulatory-grade integrity.
+    </p>
+    <div class='hero-actions'>
+      <a class='btn primary' href='https://spec.clear-trace.org' target='_blank'>View CTP Specification</a>
+      <a class='btn secondary' href='#tiers'>Certification Levels</a>
+    </div>
+  </div>
+</section>
+
+<!-- What is ACC -->
+<section class='section' id='about'>
+  <div class='container'>
+    <h2>What is ACC?</h2>
+    <p>
+      Aegis ClearTrace Certified (ACC) is the world’s first certification program focused on the transparency of algorithmic and AI-driven trading systems.  
+      It evaluates whether a trading system generates verifiable audit logs following the ClearTrace Protocol (CTP) — an open standard for immutable decision and execution trails.
+    </p>
+    <p>
+      ACC functions as the official certification arm operated by Aegis ClearTrace Inc., while the underlying protocol (CTP) is governed by the Aegis ClearTrace Standards Committee (ACSC). 
+    </p>
+  </div>
+</section>
+
+<!-- Why ACC is needed -->
+<section class='section' id='why'>
+  <div class='container'>
+    <h2>Why ACC matters</h2>
+    <p>
+      Global regulators increasingly require algorithmic trading firms to maintain detailed audit trails, including MiFID II (EU), SEC Rule 17a-4 (US), FINRA, FCA (UK), MAS (Singapore), DFSA (Dubai), SFC (Hong Kong), and SEBI (India).  
+      However, no international standard existed for capturing algorithmic decision processes in a verifiable format.
+    </p>
+    <p>
+      ACC fills this gap by certifying trading systems that adhere to CTP — ensuring that every Signal → Order → Execution → Result is captured in a provable, tamper-evident structure.  
+      This creates a transparent, conflict-free environment for Prop firms, brokers, regulators, and users. 
+    </p>
+  </div>
+</section>
+
+<!-- Certification Levels -->
+<section class='section' id='tiers'>
+  <div class='container'>
+    <h2>Certification Levels (aligned with CTP Compliance Tiers)</h2>
+    <p>ACC uses the same tier model defined in the ClearTrace Protocol v1.0.</p>
+
+    <ul>
+      <li><strong>Platinum</strong> — HFT, exchanges, ultra-low latency systems. Full PTPv2 sync, SBE format, on-chain anchoring every 10 minutes.</li>
+      <li><strong>Gold</strong> — Prop firms and institutional algo desks. NTP sync, JSON + signature, local anchoring every 1 hour.</li>
+      <li><strong>Silver</strong> — Retail MT4/MT5 algos, EA vendors. Best-effort timestamping, delegated signature, 24h anchoring.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Requirements -->
+<section class='section' id='requirements'>
+  <div class='container'>
+    <h2>ACC Requirements</h2>
+    <p>To obtain ACC certification, a system must:</p>
+    <ul>
+      <li>Output audit logs fully compliant with ClearTrace Protocol (CTP-CORE + CTP-SEC)</li>
+      <li>Implement hash-chained events (PrevHash, EventHash)</li>
+      <li>Include cryptographic signatures (ECDSA/Ed25519/RSA)</li>
+      <li>Support Merkle Root anchoring at the tier-appropriate interval</li>
+      <li>Provide complete history of Signals, Orders, Acks, Executions, Errors, and Closes</li>
+      <li>Submit logs for validation by the Aegis Judge Engine</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Certification process -->
+<section class='section' id='process'>
+  <div class='container'>
+    <h2>Certification Process</h2>
+    <ol>
+      <li>Registration & NDA</li>
+      <li>Submission of system description & log samples</li>
+      <li>Automated verification through Aegis Judge Engine</li>
+      <li>Manual review for protocol conformance</li>
+      <li>ACC Certification issuance + badge</li>
+      <li>Annual renewal with updated logs</li>
+    </ol>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class='section' id='contact'>
+  <div class='container'>
+    <h2>Contact</h2>
+    <p>
+      ACC Certification Office (Aegis ClearTrace Inc.)<br>
+      Email: <a href='mailto:certification@clear-trace.org'>certification@clear-trace.org</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class='site-footer'>
+  <div class='container'>
+    <p>
+      Aegis ClearTrace Certified (ACC) — governed by Aegis ClearTrace Inc.<br>
+      Based on ClearTrace Protocol (CTP) Specification v1.0
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
